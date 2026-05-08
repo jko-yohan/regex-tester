@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Tester - Free Online Regular Expression Tester</title>
+    <meta name="description" content="Free online regex tester. Test and debug regular expressions with real-time matching, highlighting, and match details.">
+    <meta name="keywords" content="regex tester online, regular expression tester, regex checker, regex debugger, regex validator">
+    <link rel="canonical" href="https://jko-yohan.github.io/regex-tester/">
+    <meta property="og:title" content="Regex Tester - Free Online Regular Expression Tester">
+    <meta property="og:description" content="Test and debug regular expressions with real-time matching and highlighting.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jko-yohan.github.io/regex-tester/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4754582635962628" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Regex Tester</h1>
+        <p class="subtitle">Test regular expressions with real-time matching</p>
+    </header>
+    <main>
+        <div class="regex-input-row">
+            <span class="regex-delim">/</span>
+            <input type="text" id="regex-pattern" placeholder="Enter regex pattern" spellcheck="false">
+            <span class="regex-delim">/</span>
+            <input type="text" id="regex-flags" value="g" placeholder="flags" spellcheck="false" class="flags-input">
+        </div>
+        <div id="regex-error" class="regex-error"></div>
+        <label for="test-string" class="field-label">Test String</label>
+        <div id="highlighted" class="highlighted-layer"></div>
+        <textarea id="test-string" placeholder="Enter test string..." spellcheck="false"></textarea>
+        <div class="match-info">
+            <span id="match-count">0 matches</span>
+        </div>
+        <div id="match-details" class="match-details"></div>
+
+        <section class="info-section">
+            <h2>Online Regex Tester</h2>
+            <p>Test your regular expressions in real time with instant highlighting. Supports JavaScript regex syntax with flags (g, i, m, s, u). See all matches, groups, and their positions instantly.</p>
+            <h2>Features</h2>
+            <ul>
+                <li>Real-time regex matching and highlighting</li>
+                <li>Support for all JavaScript regex flags</li>
+                <li>Match details with groups and positions</li>
+                <li>Clear error messages for invalid patterns</li>
+                <li>Works entirely in your browser</li>
+            </ul>
+        </section>
+
+        <div class="ad-placeholder">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-4754582635962628"
+                 data-ad-slot=""
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </main>
+    <footer>
+        <p>All processing runs locally in your browser. No data is sent to any server.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
