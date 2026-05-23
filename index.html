@@ -39,8 +39,20 @@
         <div id="match-details" class="match-details"></div>
 
         <section class="info-section">
-            <h2>Online Regex Tester</h2>
-            <p>Test your regular expressions in real time with instant highlighting. Supports JavaScript regex syntax with flags (g, i, m, s, u). See all matches, groups, and their positions instantly.</p>
+            <h2>What is Regex Tester?</h2>
+            <p>Regex Tester is a free online tool for testing and debugging regular expressions in real time. Regular expressions (regex or regexp) are powerful pattern-matching sequences used in programming, text processing, and data validation. They allow developers to search, match, extract, and replace text based on complex patterns. Our tool uses JavaScript regex syntax, making it directly applicable to web development, Node.js, and many other JavaScript-based environments.</p>
+            <p>With this Regex Tester, you can type a pattern and a test string, and instantly see all matches highlighted in the text. The tool displays detailed information about each match, including captured groups, match positions (start and end indices), and the total number of matches found. This makes it invaluable for developing and refining patterns before incorporating them into your codebase.</p>
+            <p>Whether you are validating email addresses, parsing log files, extracting data from structured text, or building search-and-replace functionality, this tool helps you iterate on your regular expressions quickly and confidently. All processing runs locally in your browser, so your test data remains private and never leaves your device.</p>
+
+            <h2>How to Use</h2>
+            <ol>
+                <li><strong>Enter a Pattern:</strong> Type your regular expression into the pattern input field between the two forward slashes. For example, type <code>\d+</code> to match one or more digits.</li>
+                <li><strong>Set Flags:</strong> Enter regex flags in the flags input field next to the pattern. Common flags include <code>g</code> (global - find all matches), <code>i</code> (case-insensitive), <code>m</code> (multiline), <code>s</code> (dotAll), and <code>u</code> (Unicode).</li>
+                <li><strong>Provide a Test String:</strong> Type or paste the text you want to test against into the "Test String" textarea below the pattern input.</li>
+                <li><strong>Review Results:</strong> Matches are highlighted in the test string automatically. The match count is displayed above the details panel, and each match is listed with its index, content, captured groups, and character positions.</li>
+                <li><strong>Iterate and Refine:</strong> Modify your pattern or flags and see the results update instantly. Use the error messages to fix any syntax issues in your regular expression.</li>
+            </ol>
+
             <h2>Features</h2>
             <ul>
                 <li>Real-time regex matching and highlighting</li>
@@ -48,18 +60,29 @@
                 <li>Match details with groups and positions</li>
                 <li>Clear error messages for invalid patterns</li>
                 <li>Works entirely in your browser</li>
+                <li>Visual highlighting of all matches in the test string</li>
+                <li>Detailed breakdown of captured groups for each match</li>
+                <li>Zero latency - results update as you type</li>
+            </ul>
+
+            <h2>Frequently Asked Questions</h2>
+            <h3>Which regex flavor does this tool support?</h3>
+            <p>This tool uses native JavaScript regular expressions, which means it supports all features available in your browser's JavaScript engine, including lookahead, lookbehind (in modern browsers), named capture groups, Unicode property escapes, and all standard flags (g, i, m, s, u, y).</p>
+            <h3>Can I use this tool for regex patterns in other languages like Python or Java?</h3>
+            <p>JavaScript regex syntax shares many features with other languages, but there are differences. Features like possessive quantifiers and some PCRE-specific syntax are not supported. For basic to intermediate patterns, the results will be the same across languages. For advanced patterns, always verify in your target language.</p>
+            <h3>What does the "g" flag do?</h3>
+            <p>The "g" (global) flag tells the regex engine to find all matches in the test string rather than stopping after the first match. Without the "g" flag, only the first match will be returned and highlighted.</p>
+            <h3>Why am I getting an error message?</h3>
+            <p>Error messages appear when your regular expression has invalid syntax, such as unmatched parentheses, invalid quantifiers, or unsupported escape sequences. The error message will describe the specific issue so you can fix it. Common mistakes include forgetting to escape special characters like dots, brackets, or backslashes.</p>
+
+            <h2>Tips</h2>
+            <ul>
+                <li><strong>Start simple:</strong> Build your regex incrementally. Start with a simple pattern that matches part of what you need, then add complexity step by step to avoid hard-to-debug errors.</li>
+                <li><strong>Use the global flag:</strong> Keep the "g" flag enabled to see all matches in your test string. This helps you verify that your pattern matches exactly what you intend and nothing more.</li>
+                <li><strong>Escape special characters:</strong> Characters like <code>.</code>, <code>*</code>, <code>+</code>, <code>?</code>, <code>(</code>, <code>)</code>, <code>[</code>, <code>]</code>, <code>{</code>, <code>}</code>, <code>\</code>, <code>^</code>, <code>$</code>, and <code>|</code> have special meaning in regex. Prefix them with a backslash to match them literally.</li>
+                <li><strong>Test edge cases:</strong> Include edge cases in your test string such as empty strings, strings with special characters, very long inputs, and boundary conditions to ensure your pattern is robust.</li>
             </ul>
         </section>
-
-        <div class="ad-placeholder">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-4754582635962628"
-                 data-ad-slot=""
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div>
     </main>
     <footer>
         <p>All processing runs locally in your browser. No data is sent to any server.</p>
